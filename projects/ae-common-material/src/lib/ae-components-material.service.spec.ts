@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 
-import { AeComponentsMaterialService } from './ae-components-material.service';
+import { AeComponentsMaterialService } from './ae-common-material.service';
 
 describe('AeComponentsMaterialService', () => {
   let service: AeComponentsMaterialService;
