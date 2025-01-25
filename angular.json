@@ -35,6 +35,72 @@
           }
         }
       }
+    },
+    "ae-components-material": {
+      "projectType": "library",
+      "root": "projects/ae-components-material",
+      "sourceRoot": "projects/ae-components-material/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular/build:ng-packagr",
+          "options": {
+            "project": "projects/ae-components-material/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ae-components-material/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ae-components-material/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/ae-components-material/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        }
+      }
+    },
+    "ae-components-primeng": {
+      "projectType": "library",
+      "root": "projects/ae-components-primeng",
+      "sourceRoot": "projects/ae-components-primeng/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular/build:ng-packagr",
+          "options": {
+            "project": "projects/ae-components-primeng/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ae-components-primeng/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ae-components-primeng/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/ae-components-primeng/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        }
+      }
     }
   }
 }

@@ -6,6 +6,12 @@
     "paths": {
       "ae-common": [
         "./dist/ae-common"
+      ],
+      "ae-components-material": [
+        "./dist/ae-components-material"
+      ],
+      "ae-components-primeng": [
+        "./dist/ae-components-primeng"
       ]
     },
     "outDir": "./dist/out-tsc",
